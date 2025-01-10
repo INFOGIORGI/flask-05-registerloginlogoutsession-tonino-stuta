@@ -16,4 +16,4 @@ def login():
 
 
 
-app.run()
+app.run(debug=True)

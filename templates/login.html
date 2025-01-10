@@ -1,1 +1,9 @@
-{%extends "base.html"}
+{%extends "base.html"%}
+{%block navbar%}
+<a href ="{{url_for('signin')}}">Sign In</a>
+{%endblock%}
+{%block container%}
+<div>Username: <input type="text"></div>
+<div>Password: <input type="text"></div>
+<button>Login</button>
+{%endblock%}
