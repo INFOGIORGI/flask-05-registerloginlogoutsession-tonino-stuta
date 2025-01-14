@@ -4,9 +4,15 @@
 {%endblock%}
 
 {%block container%}
-<div>Nome: <input type="text"></div>
-<div>Cognome: <input type="text"></div>
-<div>Username: <input type="text"></div>
-<div>Password: <input type="text"></div>
-<button>Login</button>
+<form action="/registrati/" method="POST">
+    <h4>Nome: </h4><input type="text" name = "nome">
+    <h4>Cognome: </h4><input type="text" name = "cognome">
+    <h4>Username: </h4><input type="text" name = "username">
+    <h4>Password: </h4><input type="password" name = "password">
+    <h4>Conferma Password: </h4><input type="password" name = "confpassword">
+    <br>
+    <br>
+    <input type = "submit" value = "Registrati"></input>
+</form>
+
 {%endblock%}
