@@ -1,9 +1,7 @@
-{%extends "base.html"%}
-{%block navbar%}
-<a href ="{{url_for('signin')}}">Sign In</a>
-{%endblock%}
 {%block container%}
-<div>Username: <input type="text"></div>
-<div>Password: <input type="text"></div>
-<button>Login</button>
+<form action="/login/" method="POST">
+    <h4>Username: </h4><input type="text" name = "username">
+    <h4>Password: </h4><input type="password" name = "password">
+    <input type = "submit" value = "Logi in"></input>
+</form>
 {%endblock%}
